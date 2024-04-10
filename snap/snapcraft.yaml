@@ -1,0 +1,41 @@
+name: porydrive
+base: core22
+version: '2.0'
+summary: A car game where you must catch Porygon!
+description: |
+  Drive around and "collect" Porygon, each time you collect a Porygon a new one will randomly spawn somewhere on the map. A Porygon colliding with a purple cube will cause it to light up blue, this can help you find them. Upon right clicking the mouse you will switch between Ariel and Close views, in the Ariel view it is easier to see which of the purple cubes that the Porygon is colliding with. You can coast the side of collisions to speed up the recharging of boost.
+  Mouse locks when you click on the window, press ESCAPE to unlock the mouse.
+
+grade: stable
+confinement: strict
+
+architectures:
+  - build-on: [amd64]
+    build-for: [amd64]
+  - build-on: [arm64]
+    build-for: [arm64]
+  - build-on: [armhf]
+    build-for: [armhf]
+
+apps:
+  porydrive:
+    extensions: [gnome-3-38]
+    command: porydrive
+    plugs:
+    - desktop
+    - desktop-legacy
+    - gsettings
+    - opengl
+    - wayland
+    - x11
+
+parts:
+  porydrive:
+    source: https://github.com/mrbid/Porydrive-2.0
+    source-type: git
+    plugin: make
+    build-packages:
+    - libglfw3-dev
+    stage-packages:
+    - libglfw3
+    - libgles2
