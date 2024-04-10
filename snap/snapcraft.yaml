@@ -19,7 +19,7 @@ architectures:
 
 apps:
   porydrive:
-    extensions: [gnome-3-38]
+    extensions: [gnome]
     command: porydrive
     plugs:
     - desktop
