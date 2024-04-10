@@ -34,6 +34,7 @@ parts:
     source: https://github.com/mrbid/Porydrive-2.0
     source-type: git
     plugin: make
+    source-subdir: snap
     build-packages:
     - libglfw3-dev
     stage-packages:
