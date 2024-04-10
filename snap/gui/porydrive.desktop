@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PoryDrive
+Comment=A car game where you must catch Porygon!
+StartupNotify=false
+Exec=porydrive
+Icon=${SNAP}/meta/gui/porydrive.png
+Terminal=false
+Type=Application
+Categories=Game;ArcadeGame;KidsGame;Graphics
