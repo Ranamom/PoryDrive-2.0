@@ -2,6 +2,7 @@
 
 * **Play Online:** https://mrbid.github.io/porydrive
 * **Flathub:** https://flathub.org/apps/com.voxdsp.PoryDrive
+* **Snapcraft:** https://snapcraft.io/porydrive
 * **Windows:** [PoryDrive_win.zip](https://github.com/mrbid/PoryDrive-2.0/releases/download/windows/PoryDrive_win.zip)
 
 ## input
