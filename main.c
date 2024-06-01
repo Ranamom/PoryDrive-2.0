@@ -1160,7 +1160,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 }
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
-    if(yoffset < 0){zoom += 0.06f * zoom;}else{zoom -= 0.06f * zoom;}
+    if(yoffset < 0.0){zoom += 0.06f * zoom;}else{zoom -= 0.06f * zoom;}
     if(zoom > -0.11f){zoom = -0.11f;}
 }
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
